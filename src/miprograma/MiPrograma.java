@@ -12,7 +12,7 @@ import miprograma.programa;
 
 
 public class MiPrograma {
- double Iteraccion;
+int Iteraccion;
  double Xi;
  double Xs;
  double Xr;
@@ -25,7 +25,7 @@ double n;
 
 
 
-    public MiPrograma(double Iteraccion, double Xi, double Xs, double Xr, double FXi, double FXr, double FXiFXr, double ERR) {
+    public MiPrograma(int Iteraccion, double Xi,double Xs, double Xr, double FXi, double FXr, double FXiFXr, double ERR) {
         this.Iteraccion = Iteraccion;
         this.Xi = Xi;
         this.Xs = Xs;
@@ -48,42 +48,84 @@ double n;
     
     }
 
-    
-
-    
-
-    public double getIteraccion() {
+    public int getIteraccion() {
         return Iteraccion;
-        
+    }
+
+    public void setIteraccion(int Iteraccion) {
+        this.Iteraccion = Iteraccion;
     }
 
     public double getXi() {
         return Xi;
     }
 
+    public void setXi(int Xi) {
+        this.Xi = Xi;
+    }
+
     public double getXs() {
         return Xs;
+    }
+
+    public void setXs(int Xs) {
+        this.Xs = Xs;
     }
 
     public double getXr() {
         return Xr;
     }
 
+    public void setXr(double Xr) {
+        this.Xr = Xr;
+    }
+
     public double getFXi() {
         return FXi;
+    }
+
+    public void setFXi(double FXi) {
+        this.FXi = FXi;
     }
 
     public double getFXr() {
         return FXr;
     }
 
+    public void setFXr(double FXr) {
+        this.FXr = FXr;
+    }
+
     public double getFXiFXr() {
         return FXiFXr;
+    }
+
+    public void setFXiFXr(double FXiFXr) {
+        this.FXiFXr = FXiFXr;
     }
 
     public double getERR() {
         return ERR;
     }
+
+    public void setERR(double ERR) {
+        this.ERR = ERR;
+    }
+
+    public double getN() {
+        return n;
+    }
+
+    public void setN(double n) {
+        this.n = n;
+    }
+    
+
+    
+
+    
+
+    
 }
 
 

@@ -76,6 +76,7 @@ private DatosTable jj=new DatosTable();
         jLabel1.setText("METODO NUMERICO");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
         setIconImage(getIconImage());
         setIconImages(getIconImages());
@@ -242,8 +243,8 @@ JOptionPane.showMessageDialog(null, "Igrese un Numero Valido");
 
 }
   int it=Integer.parseInt(iteracion.getText());
-        int xii=Integer.parseInt(intervaloXi.getText());
-        int xss=Integer.parseInt(intervaloXs.getText());
+       double xii=Double.parseDouble(intervaloXi.getText());
+        double xss=Double.parseDouble(intervaloXs.getText());
         tablaProblema.setModel(new AbstracModel(jj.getTablaBiseccion(it,xii,xss)));
 }catch (NumberFormatException error)
 {
@@ -270,12 +271,14 @@ JOptionPane.showMessageDialog(null, "Igrese un Numero Valido");
 
     private void borrarLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarLimpiarActionPerformed
         // TODO add your handling code here:
-        
+        DatosTable b=new DatosTable();
         if (evt.getSource()==borrarLimpiar){
         
         iteracion.setText("");
         intervaloXi.setText("");
         intervaloXs.setText("");
+     
+     
        
         }else{if (borrarLimpiar==null){
         JOptionPane.showInternalMessageDialog(null, "LLena los campos");
